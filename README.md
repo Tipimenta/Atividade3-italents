@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Projeto de Cadastro de Animes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React para cadastrar e listar animes. Nele, você pode adicionar animes com o nome, link para a capa (imagem) e uma descrição. Os animes cadastrados serão exibidos em uma lista abaixo do formulário.
 
-## Available Scripts
+## Demonstração
 
-In the project directory, you can run:
+https://atividade3-italents-8nykp1afh-tipimentas-projects.vercel.app/
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Cadastro de animes com nome, link da capa e descrição.
+- Exibição de uma lista de animes cadastrados.
+- Componentes funcionais utilizando `props` e `useState`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **CSS Modules**: Para estilização dos componentes.
+- **JavaScript**: Usado para manipulação de estados e lógica da aplicação.
+- **npx create-react-app**: Ferramenta usada para iniciar o projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos
 
-### `npm run build`
+- Node.js (v12 ou superior)
+- npm ou yarn para gerenciamento de pacotes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Passo 1: Clonar o Repositório
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Abra o terminal e execute o seguinte comando:
+```
+git clone https://github.com/Tipimenta/Atividade3-italents.git
+```
 
-### `npm run eject`
+Passo 2: Instalar Dependências
+Após clonar o repositório, entre na pasta do projeto e instale as dependências com o seguinte comando:
+```
+cd seu-repositorio
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Passo 3: Executar a Aplicação
+Com as dependências instaladas, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+```
+npm start
+```
+Isso iniciará a aplicação localmente no endereço http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Estrutura dos Componentes
+App.js: Componente principal que gerencia o estado dos animes e renderiza o formulário e a lista.
+FormAnime.js: Componente de formulário onde o usuário pode cadastrar novos animes.
+Listagem.js: Componente responsável por exibir a lista de animes cadastrados.
+Button.js: Componente reutilizável para os botões de ação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Passo 4: Adicionar um Anime
+Preencha os campos de "Nome do Anime", "Link da Capa" e "Descrição do Capítulo".
+Clique no botão "Cadastrar Anime".
+O anime será adicionado à lista de animes cadastrados abaixo do formulário.
